@@ -36,8 +36,8 @@ async function getAnswers(db, id, answerCount) {
 async function main() {
     let db_url = 'mongodb://localhost:27017/db_zhihu'
     let db = await MongoClient.connect(db_url)
-    let s_id = 60000000
-    let e_id = 69999999
+    let s_id = 31894251
+    let e_id = 31894253
     for (let id = s_id; id < e_id; id++) {
         try {
             await getQuestion(db, id);
